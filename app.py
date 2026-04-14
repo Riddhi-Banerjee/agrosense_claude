@@ -92,7 +92,7 @@ def load_bundle():
     with open("models (1)/model_bundle.pkl", "rb") as f:
         bundle = pickle.load(f)
     autoencoders = {}
-    for fname in os.listdir("models"):
+    for fname in os.listdir("models (1)"):
         if fname.startswith("ae_") and fname.endswith(".keras"):
             parts  = fname.replace(".keras", "").split("_")
             crop   = int(parts[1])
