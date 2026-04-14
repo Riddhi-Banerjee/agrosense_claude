@@ -89,7 +89,7 @@ section[data-testid="stSidebar"] .stButton > button:hover {
 # ============================================================
 @st.cache_resource
 def load_bundle():
-    with open("models/model_bundle.pkl", "rb") as f:
+    with open("models (1)/model_bundle.pkl", "rb") as f:
         bundle = pickle.load(f)
     autoencoders = {}
     for fname in os.listdir("models"):
